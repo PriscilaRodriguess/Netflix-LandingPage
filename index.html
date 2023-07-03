@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Netflix Clone</title>
+</head>
+<body>
+    <div class="app_background">
+        <div class="app__hero">
+    <header>
+        <div class="header__logo">
+            <img src="./img/logo 1.png" alt="Logo Netflix">
+        </div>
+        <div class="header__menu">
+            <div class="header__menu--left">
+                <ul>
+                    <li>Início</li>
+                    <li>Séries</li>
+                    <li>Filmes</li>
+                    <li>Bombando</li>
+                    <li>Minha Lista</li>
+                </ul>
+            </div>
+            <div class="header__menu--right">
+                <ul>
+                    <li><i class="fas fa-search"></i></li>
+                    <li><i class="fas fa-bell"></i></li>
+                    <li class="header__user">
+                        <img src="./img/user 1.png" alt="Avatar Usuário">
+                        <i class="fas fa-sort-down"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </header>
+    <main>
+        <!--Banner-->
+        <div class="banner">
+            <img class="banner__poster" src="./img/poster 1.png" alt="Banner do filme">
+            <span class="banner_subtitle">Em uma penitenciária de última geração, um detento participa de um experimento com drogas que controlam as emoções para um gênio da indústria farmacêutica.</span>
+            <div class="banner_btn">
+                <button type="submit" class="banner_btn--play"> 
+                    <i class="fas fa-play"></i>
+                    Assistir
+                </button>
+                <button class="banner_btn--info">
+                    <i class="fas fa-thin fa-circle-info"></i>
+                    Mais informações
+                </button>
+            </div>
+        </div>
+        <!--Fim do Banner-->
+        <!--Trilho - sem animação-->
+        <div class="category">
+            <p class="category__title">Minha lista</p>
+            <section>
+                <div class="item">
+                    <img src="./img/poster_01.jpg" alt="BoJack Horseman" />
+                  </div>
+                  <div class="item">
+                    <img src="./img/poster_02.jpg" alt="Ozark" />
+                  </div>
+                  <div class="item">
+                    <img src="./img/poster_03.jpg" alt="A vizinha da mulher na janela" />
+                  </div>
+                  <div class="item">
+                    <img src="./img/poster_04.jpg" alt="Breaking bad" />
+                  </div>
+                  <div class="item">
+                    <img src="./img/poster_05.jpg" alt="The end of the f***ink world" />
+                  </div>
+                </section>
+            </section>
+        </div>
+        <!--Trilho – com animação hover -->
+        <div class="category">
+            <p class="category__title">Em alta</p>
+            <section>
+                <div class="item -animation">
+                    <img src="img/poster_01 (1).jpg" alt="Stranger things" />
+                  </div>
+                  <div class="item -animation">
+                    <img src="img/poster_02 (1).jpg" alt="The umbrella academy" />
+                  </div>
+                  <div class="item -animation">
+                    <img src="img/poster_03 (2).jpg" alt="Peaky Blinders" />
+                  </div>
+                  <div class="item -animation">
+                    <img src="img/poster_04 (1).jpg" alt="Arremessando alto" />
+                  </div>
+                  <div class="item -animation">
+                    <img src="img/poster_05 (1).jpg" alt="Amor e gelato" />
+                </div>
+                </section>
+            </section>
+        </div>
+        <!--Trilho com animação efeito Slider-->
+        <div class="category">
+            <p class="category__title">Séries excêntricas de humor ácido</p>
+            <div class="wrapper">
+              <section id="section1">
+                <a href="#section3" class="arrow__btn"></a>
+                <div class="item -animation -animation">
+                  <img src="img/poster_01 (2).jpg" alt="Queen Loretta" />
+                </div>
+                <div class="item -animation">
+                  <img src="img/poster_02 (2).jpg" alt="As 7 vidas de Lea" />
+                </div>
+                <div class="item -animation">
+                  <img src="img/poster_17.jpg" alt="The good place" />
+                </div>
+                <div class="item -animation">
+                  <img src="img/poster_03 (2).jpg" alt="Young Royals" />
+                </div>
+                <div class="item -animation">
+                  <img src="img/poster_05 (2).jpg" alt="Dark" />
+                </div>
+                <a href="#section2" class="arrow__btn"><i class="fas fa-angle-right"></i></a>
+              </section>
+              <section id="section2">
+                <a href="#section1" class="arrow__btn"><i class="fas fa-angle-left"></i></a>
+                <div class="item -animation">
+                  <img src="img/poster_06 (2).jpg" alt="Bem vindos ao Éden" />
+                </div>
+                <div class="item -animation">
+                  <img src="img/poster_18.jpg" alt="UnbreakAble Kimmy Schmidt" />
+                </div>
+                <div class="item -animation">
+                  <img src="img/poster_08.jpg" alt="Elize Matsunaga - Era uma vez um crime" />
+                </div>
+                <div class="item -animation">
+                  <img src="img/poster_09.jpg" alt="The Ted Bundy Tapes" />
+                </div>
+                <div class="item -animation">
+                  <img src="img/poster_10.jpg" alt="Gabriel Fluffy" />
+                </div>
+                <a href="#section3" class="arrow__btn"><i class="fas fa-angle-right"></i></a>
+              </section>
+              <section id="section3">
+                <a href="#section2" class="arrow__btn"><i class="fas fa-angle-left"></i></a>
+                <div class="item -animation">
+                  <img src="img/poster_11.jpg" alt="Polar" />
+                </div>
+                <div class="item -animation">
+                  <img src="img/poster_12.jpg" alt="Fyre" />
+                </div>
+                <div class="item -animation">
+                  <img src="img/poster_13.jpg" alt="Friends from college" />
+                </div>
+                <div class="item -animation">
+                  <img src="img/poster_14.jpg" alt="Riverdale" />
+                </div>
+                <div class="item -animation">
+                  <img src="img/poster_15.jpg" alt="Velvet buzzsaw" />
+                </div>
+                <a href="#section1" class="arrow__btn"><i class="fas fa-angle-right"></i></a>
+              </section>
+            </div>
+          </div>
+    </main>
+    <footer>
+        <div class="social-links">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+
+        <div class="link-content">
+          <div class="link-content__info">
+            <ul>
+              <li>Idioma e legendas</li>
+              <li>Imprensa</li>
+              <li>Privacidade</li>
+              <li>Entre em contato</li>
+            </ul>
+            <ul>
+              <li>Audiodescrição</li>
+              <li>Relações com investidores</li>
+              <li>Avisos legais</li>
+            </ul>
+            <ul>
+              <li>Centro de ajuda</li>
+              <li>Carreiras</li>
+              <li>Preferência de cookies</li>
+            </ul>
+            <ul>
+              <li>Cartão pré-pago</li>
+              <li>Termos de uso</li>
+              <li>informações corporativas</li>
+            </ul>
+          </div>
+          <div class="link-content__service">
+            <button class="link-content__service-code">Código do serviço</button>
+          </div>
+          <div class="link-content__copyright">
+            <span>© 1997-2022 Netflix, Inc.&nbsp;&nbsp;&lrm;</span>
+          </div>
+      </footer> 
+    </div>
+    </div>
+</body>
+</html>
